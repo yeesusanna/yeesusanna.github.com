@@ -1,0 +1,311 @@
+<div id="plate">
+<div id='plate2'>
+	<div class='instructions'>SEE INSTRUCTIONS</div>
+	<div class='testmonthly'>TEST MONTHLY</div>
+	<div class='isocket'></div>
+	<div class='tsocket'></div>
+	<div class='tsocket2'></div>
+	<div class='socket3'></div>
+	<div class='button'>
+		<div class='test'>TEST</div>
+		<div class='test2'>TEST</div>
+	</div>
+		<div class='reset'>RESET</div>
+		<div class='reset2'>RESET</div>
+</div>
+<div class='screw'>
+	<div class='screw-rect'></div>
+	</div>
+<div class='screw-rect2'></div>
+<div class='6'></div>
+<div class='7'></div>
+<div class='8'></div>
+</div>
+
+<style>
+
+/* http://meyerweb.com/eric/tools/css/reset/ --------------------------------------------
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------------------------end clearfix-----------------------------------------------------*/
+
+body{
+	background-color:#69B7CC;
+	font-family:Helvetica;
+	font-size:12px;
+}
+
+#plate{
+	background-color:#000000;
+	height:494px;
+	width:304px;
+	margin-left:100px;
+	margin-top:75px;
+	position:absolute;
+}
+
+#plate2{
+	background-color:#ffffff;
+	width:152px;
+	height:302px;
+	position:absolute;
+	margin-left:75px;
+	margin-top:95px;
+	position:absolute;
+	border-radius: 10px;
+}
+
+.screw{
+	background-color:white;
+	border-radius:50%;
+	height:31px;
+	width:31px;
+	margin-top:18px;
+	margin-left:135px;
+	position:absolute;
+}
+
+.screw:after{
+	content:"";
+	background-color:white;
+	border-radius:50%;
+	height:31px;
+	width:31px;
+	top:428px;
+	position:absolute;
+}
+
+.screw-rect{
+	background-color:black;
+	width:5px;
+	height:24px;
+	margin-top:3px;
+	margin-left:13px;
+	position:absolute;	
+}
+
+.screw-rect2{
+	background-color:black;
+	width:5px;
+	height:24px;
+	margin-top:3px;
+	margin-left:13px;
+	top:446px;
+	left:135px;
+	position:absolute;	
+}
+
+.isocket{
+	background-color:black;
+	height:31px;
+	width:10px;
+	margin-left:43px;
+	margin-top:58px;
+	position:absolute;
+}
+
+.isocket:after{
+	content:"";
+	background-color:black;
+	height:31px;
+	width:10px;
+	top:201px;
+	position:absolute;
+}
+
+.button{
+	background-color:white;
+	border:2px solid black;
+	width:68px;
+	height:34px;
+	position:absolute;
+	margin-top:110px;
+	margin-left:42px;
+}
+
+.button:after{
+	content:"";
+	background-color:white;
+	border:2px solid black;
+	width:68px;
+	height:34px;
+	position:absolute;
+	top:48px;
+	margin-left:-2px;
+}
+
+.tsocket{
+	background-color:black;
+	position:absolute;
+	height:39px;
+	width:10px;
+	margin-left:100px;
+	margin-top:55px;
+}
+
+.tsocket2{
+	background-color:black;
+	position:absolute;
+	height:10px;
+	width:25px;
+	margin-left:109px;
+	margin-top:69px;
+}
+
+.tsocket:after{
+	content:"";
+	background-color:black;
+	position:absolute;
+	height:39px;
+	width:10px;
+	top:200px;
+}
+
+.tsocket2:after{
+	content:"";
+	background-color:black;
+	position:absolute;
+	height:10px;
+	width:25px;
+	top:200px;
+}
+
+.socket3{
+	position:absolute;
+  	width: 24px;
+  	height: 23px;
+	margin-top:8px;
+	margin-left:63px;
+  	border-radius:0 0 50% 50%;
+	background-color:black;
+  	border-top:none;
+}
+
+.socket3:after{
+	content:"";
+	position:absolute;
+  	width: 24px;
+  	height: 23px;
+	top:202px;
+  	border-radius:0 0 50% 50%;
+	background-color:black;
+  	border-top:none;
+}
+
+.instructions{
+	position:absolute;
+	-webkit-transform:rotate(270deg);
+	top:147px;
+	left:-45px;
+}
+
+.testmonthly{
+	position:absolute;
+	-webkit-transform:rotate(90deg);
+	top:153px;
+	left:90px;
+	width:100px;
+}
+
+.test{
+	position:absolute;
+	margin-left:18px;
+	margin-top:5px;
+}
+
+.test2{
+	position:absolute;
+	content:"";
+	-webkit-transform:rotate(180deg);
+	top:9px;
+	left:-2px;
+	width:50px;
+	height:20px;
+}
+
+.reset{
+	position:absolute;
+	top:167px;
+	left:58px;
+}
+
+.reset2{
+	position:absolute;
+	top:179px;
+	left:58px;
+	-webkit-transform:rotate(180deg);
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
