@@ -1,5 +1,5 @@
 <div id="plate">
-<div id='plate2'>
+<div id='plate2' class='plate2a'>
 	<div class='instructions'>SEE INSTRUCTIONS</div>
 	<div class='testmonthly'>TEST MONTHLY</div>
 	<div class='isocket'></div>
@@ -20,6 +20,10 @@
 <div class='6'></div>
 <div class='7'></div>
 <div class='8'></div>
+
+		<div class='shock1'>&#9889;</div>
+				<div class='shock2'>&#9889;</div>
+						<div class='shock3'>&#9889;</div>
 </div>
 
 <style>
@@ -282,9 +286,68 @@ body{
 	-webkit-transform:rotate(180deg);
 }
 
+.shock1,.shock2,.shock3{
+	font-size:100px;
+	color:yellow;
+	opacity:0;
+} 
+
+.shock1{
+	position:absolute;
+	left:185px;
+	top:70px;
+}
+
+.shock2{
+	position:absolute;
+	left:200px;
+	top:120px;
+	-webkit-transform: rotate(45deg);
+}
+
+.shock3{
+	position:absolute;
+	left:200px;
+	top:170px;
+	-webkit-transform: rotate(90deg);
+}
+
+.shock1:hover,   .shock2:hover,  .shock3:hover {
+	opacity:1;
+}
+
+.shock1:hover{
+			-webkit-animation: shocking1 0.2s linear 0 infinite normal; 
+}
+
+.shock2:hover{
+			-webkit-animation: shocking2 0.2s linear 0 infinite normal; 
+}
+
+.shock3:hover{
+			-webkit-animation: shocking3 0.2s linear 0 infinite normal; 
+}
+
+/* Define the keyframe */
+@-webkit-keyframes shocking1 {
+   0% { font-size:125px; -webkit-transform: translate(0px,0px);}
+   50%  { font-size:150px; -webkit-transform: translate(50px,-50px);}
+   100% {  font-size:200px; -webkit-transform: translate(100px,-100px);}
+}
+
+@-webkit-keyframes shocking2 {
+   0% { font-size:125px; -webkit-transform: rotate(45deg) translate(0px,0px) ;}
+   50%  { font-size:150px; -webkit-transform: rotate(45deg) translate(0px,-50px) ;}
+   100% {  font-size:200px; -webkit-transform: rotate(45deg) translate(0px,-50px) ;}
+}
+
+@-webkit-keyframes shocking3 {
+   0% { font-size:125px; -webkit-transform: rotate(90deg) translate(0px,0px);}
+   50%  { font-size:150px; -webkit-transform: rotate(90deg) translate(50px,-50px);}
+   100% {  font-size:200px; -webkit-transform: rotate(90deg) translate(100px,-100px);}
+}
+
 </style>
-
-
 
 
 
