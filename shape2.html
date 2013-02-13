@@ -1,4 +1,4 @@
-<div id="usb-top">
+<div id="usb-top" class='usb-top-container'>
 	
 	<div class='nib1'></div>
 	<div class='nib2'></div>
@@ -87,6 +87,8 @@ body {
 	margin-left:125px;
 	margin-top:100px;
 	position:absolute;
+	 -webkit-animation: plug-up 1s linear 0s 1 normal;
+	-webkit-animation-fill-mode: forwards;
 }
 
 .nib1{
@@ -245,6 +247,17 @@ body {
 	top:430px;
 	left:40px;
 }
+
+@-webkit-keyframes plug-up {
+   0% { -webkit-transform: translate(0,0); }
+   50%  { -webkit-transform: translate(0,-100px); }
+   100% {  -webkit-transform: translate(0, -210px); }
+}
+
+
+
+
+
 
 
 
