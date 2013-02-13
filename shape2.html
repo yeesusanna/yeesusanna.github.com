@@ -87,7 +87,7 @@ body {
 	margin-left:125px;
 	margin-top:100px;
 	position:absolute;
-	 -webkit-animation: plug-up 1s linear 0s 1 normal;
+	 -webkit-animation: plug-up 2s linear 0s 1 normal;
 	-webkit-animation-fill-mode: forwards;
 }
 
@@ -250,8 +250,10 @@ body {
 
 @-webkit-keyframes plug-up {
    0% { -webkit-transform: translate(0,0); }
-   50%  { -webkit-transform: translate(0,-100px); }
-   100% {  -webkit-transform: translate(0, -210px); }
+   25%  { -webkit-transform: translate(0,-100px); }
+   50% {  -webkit-transform: translate(0, -210px); }
+   75% {  -webkit-transform: rotate(-45deg) translate(0, 210px); }
+   100% {  -webkit-transform: rotate(-91deg) translate(0, -205px); }
 }
 
 
