@@ -1,0 +1,201 @@
+<div id="container">
+	
+	<div class='toast1'>
+		<div class='toast2'></div>
+	</div>
+
+	<div id="toaster">
+		<div class='feet'></div>
+		<div class='slider'></div>
+	</div>
+
+</div>
+
+<style>
+
+/* http://meyerweb.com/eric/tools/css/reset/ --------------------------------------------
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------------------------end clearfix-----------------------------------------------------*/
+
+#container {
+	width:500px;
+	height:700px;
+	margin-top:20px;
+	margin-left:100px;
+	background-color:#69B7CC;
+	position:relative;
+}
+
+body{
+	background-color:#69B7CC;
+}
+
+#toaster {
+	background-color:black;
+	position:absolute;
+	height:270px;
+	width:407px;
+	margin-left:40px;
+	margin-top:400px;
+	border-radius:10px;
+}
+
+.feet{
+	background-color:black;
+	width:51px;
+	height:16px;
+	position:absolute;
+	margin-top:270px;
+	margin-left:30px;
+}
+
+.feet:after{
+	content:"";
+	background-color:black;
+	width:51px;
+	height:16px;
+	position:absolute;
+	margin-left:300px;
+}
+
+.slider{
+	border-radius:10px;
+	background-color:black;
+	height: 53px;
+	width: 36px;
+	margin-left:387px;
+	margin-top:122px;
+	position:absolute;
+	-webkit-animation: slideup 1s linear 0 normal;
+}
+
+.toast1{ /*crust*/
+	background-color:#92481D;
+	border-radius:10px;
+	height: 256px;
+	width: 290px;
+	margin-top:400px;
+	margin-left:100px;
+	position:absolute;
+	 -webkit-animation: popup 1s linear 0 normal;
+}
+
+.toast2{ /*inner*/
+	background-color:#F3D48C;
+	border-radius:10px;
+	height: 237px;
+	width: 270px;
+	margin-top:9px;
+	margin-left:9px;
+	position:absolute;
+}
+
+
+@-webkit-keyframes popup {
+   0% { -webkit-transform: translate(0,0); }
+   25%  { -webkit-transform: translate(0,-400px); }
+   50%  { -webkit-transform: translate(0,-300px); }
+   75%  { -webkit-transform: translate(0,-200px); }
+   100% {  -webkit-transform: translate(0, 20px); }
+}
+
+@-webkit-keyframes slideup {
+   0% { -webkit-transform: translate(0,0); }
+   25%  { -webkit-transform: translate(0,-75px); }
+   50%  { -webkit-transform: translate(0,-50px); }
+   75%  { -webkit-transform: translate(0,-25px); }
+   100% {  -webkit-transform: translate(0, 0px); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
